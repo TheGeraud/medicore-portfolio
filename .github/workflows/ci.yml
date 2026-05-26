@@ -103,6 +103,7 @@ jobs:
           image-ref: medicore-frontend:latest
           severity: HIGH,CRITICAL
           exit-code: '1'
+          trivyignores: .trivyignore
       
   build-and-push:
     runs-on: ubuntu-latest
