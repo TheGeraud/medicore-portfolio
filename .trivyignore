@@ -11,3 +11,6 @@ CVE-2026-24842
 CVE-2026-26960
 CVE-2026-29786
 CVE-2026-31802
+
+# Faille dans libxml2 de nginx:alpine - correctif non encore disponible dans l'image de base
+CVE-2026-6732
