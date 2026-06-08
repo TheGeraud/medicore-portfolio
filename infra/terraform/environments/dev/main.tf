@@ -33,3 +33,12 @@ module "rds" {
   private_subnet_ids = module.vpc.private_subnet_ids
   vpc_id             = module.vpc.vpc_id
 }
+
+module "elasticache" {
+  source = "../../modules/elasticache"
+
+  project_name       = "medicore"
+  environment        = "dev"
+  private_subnet_ids = module.vpc.private_subnet_ids
+  vpc_id             = module.vpc.vpc_id
+}
