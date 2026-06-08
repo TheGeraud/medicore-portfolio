@@ -42,3 +42,12 @@ module "elasticache" {
   private_subnet_ids = module.vpc.private_subnet_ids
   vpc_id             = module.vpc.vpc_id
 }
+
+module "eks" {
+  source = "../../modules/eks"
+
+  project_name       = "medicore"
+  environment        = "dev"
+  private_subnet_ids = module.vpc.private_subnet_ids
+  vpc_id             = module.vpc.vpc_id
+}
